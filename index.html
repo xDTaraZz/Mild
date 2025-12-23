@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Happy 20th Birthday</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;600;700&family=Prompt:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="start-overlay-screen" class="start-screen">
+        <div class="gift-box-wrapper" id="gift-box">
+            <div class="gift-box">
+                <div class="gift-lid">
+                    <div class="lid-top">
+                        <div class="ribbon-cross"></div>
+                        <div class="bow">
+                            <div class="bow-loop bow-left"></div>
+                            <div class="bow-loop bow-right"></div>
+                            <div class="bow-knot"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gift-base">
+                    <div class="ribbon-vertical"></div>
+                </div>
+            </div>
+            <div class="gift-text">Tap to Open 🎁</div>
+        </div>
+    </div>
+    <div class="main-container">
+        <div id="instruction" class="instruction-text">Wait for it...</div>
+        <div class="cake-container" id="cake-container">
+            <svg width="450" height="300" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg"
+                class="cake-svg">
+                <!-- Cake Base (Dark Red Velvet) -->
+                <path
+                    d="M150 180C220 180 270 170 270 155C270 140 220 130 150 130C80 130 30 140 30 155C30 170 80 180 150 180Z"
+                    fill="#8E0000" />
+                <!-- Cake Body (Red Velvet) -->
+                <path d="M50 80V140C50 155 100 165 150 165C200 165 250 155 250 140V80" fill="#C62828" />
+                <!-- Cake Top Surface (Red Velvet) -->
+                <path d="M50 80C50 65 100 55 150 55C200 55 250 65 250 80C250 95 200 105 150 105C100 105 50 95 50 80Z"
+                    fill="#E53935" />
+                <!-- Inner Ring/Shadow -->
+                <path d="M50 80C50 65 100 55 150 55C200 55 250 65 250 80V90C250 75 200 65 150 65C100 65 50 75 50 90V80Z"
+                    fill="#D32F2F" />
+                <!-- Icing (Snow White) -->
+                <path
+                    d="M50 80C60 90 70 85 80 80C90 75 100 90 110 85C120 80 130 90 140 85C150 80 160 90 170 85C180 80 190 90 200 85C210 80 220 90 230 85C240 80 250 80 250 80"
+                    stroke="white" stroke-width="15" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <div id="candle-container"></div>
+        </div>
+    </div>
+    <canvas id="firework-canvas"></canvas>
+    <div id="dark-overlay"></div>
+    <div id="santa-finale">
+        <div class="santa-container">
+            <img src="https://purepng.com/public/uploads/large/purepng.com-santa-claus-packsanta-clauschristmasfather-christmasst-nicholassaint-nickcringlesantaclaus-241519331818bdk74.png"
+                alt="Santa Claus" class="santa-img">
+        </div>
+        <div class="card-container">
+            <div class="card-bg">
+                <svg viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100%" height="100%" fill="#fffbf0" rx="10" />
+                    <rect x="10" y="10" width="280" height="380" fill="none" stroke="#b71c1c" stroke-width="2" rx="5" />
+                    <path d="M20 20 C20 20 25 10 35 25 C35 25 45 20 40 35 C40 35 30 40 20 20" fill="#2e7d32" />
+                    <circle cx="28" cy="28" r="3" fill="#d32f2f" />
+                </svg>
+                <div class="card-text">
+                    <h1>Happy Birthday</h1>
+                    <h2>20 Years</h2>
+                    <p>ขอให้ปีนี้เป็นปีที่ดีที่สุดนะคนเก่ง ❤️<br>มีความสุขมากๆ<br>รักนะครับ เอ๋อ</p>
+                    <div class="signature">With Love</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
